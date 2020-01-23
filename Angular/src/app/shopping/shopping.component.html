@@ -1,0 +1,14 @@
+<div class="container">
+    <h1 class="shop-head">Shopping List</h1>
+    <hr>
+    <app-edit (add)="itemAdded($event)" (delete)="itemDeleted()" (clear)="clearItems()"></app-edit>
+    <ul class="shopul-head ">
+        <h2 style="margin: 0px 0px 20px 0px;text-decoration: underline;font-size: 28px;">Buy Items:</h2>
+        <li [@shopState]="" class="list" *ngFor="let x of Shop">
+            <a (click)="buy(x)" class="list list-group-item clearfix">
+                <h3 class="list list-group-item-heading">{{ x.name }} ({{ x.amount }})</h3>
+            </a>
+        </li>
+    </ul>
+
+</div>

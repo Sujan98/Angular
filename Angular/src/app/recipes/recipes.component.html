@@ -1,0 +1,25 @@
+<h1 class="recipe-head">Recipes</h1>
+<hr>
+<div class="container-fluid">
+    <div class="row">
+        <div class="recipe-list col-md-5">
+            <h2 class="ul-head">List of recipes:</h2>
+            <ul>
+                <li *ngFor='let x of Ingredients' class="list">
+                    <a (click)="clicked(x.name)" class="list-group-item clearfix">
+                        <div class="r-des float-left">
+                            <h4 class="list-group-item-heading m-0">{{ x.name }}</h4>
+                            <p class="list-group-item-text m-0">{{ x.desc }}</p>
+                        </div>
+                        <div class="r-logo float-right">
+                            <img [src]="x.path" class="r-logo" alt="logo">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="recipe_detail col-md-7">
+            <app-detail [rname]='rName'></app-detail>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.recipe-head {
+    color: rgb(0, 247, 255);
+    font-weight: bold;
+    text-align: center;
+    font-size: 45px;    
+}
+h2 {
+    color: rgb(0, 224, 231);
+}
+.ul-head {
+    margin: 20px 0px;
+}
+.r-logo {
+    width: 70px;
+}
+.r-des {
+    padding: 14px 0px;
+}
+.list {
+    list-style-type: none;
+    margin: 10px 0px;
+    cursor: pointer;
+}

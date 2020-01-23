@@ -1,0 +1,21 @@
+<h2 style="margin-top: 50px;">Edit Items:</h2>
+<form>
+    <div class="row">
+        <div class="col-sm-5">
+            <label for="input-name">Name:</label>
+            <input appBasicdir [(ngModel)]='name' type="text" id="input-name" name="itemName" class="input-name form-control">
+        </div>
+
+        <div class="col-sm-2">
+            <label for="input-amount">Amount</label>
+            <input [(ngModel)]='amount' type="Number" id="input-amount" name="itemNumber" class="input-amount form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button (click)="addItem()" class="btn btn-success">Add</button>
+            <button (click)="deleteItem()" class="btn btn-danger">Delete</button>
+            <button (click)="clearItem()" class="btn btn-primary">Clear</button>
+        </div>
+    </div>
+</form>

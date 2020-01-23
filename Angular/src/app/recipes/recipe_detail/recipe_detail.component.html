@@ -1,0 +1,12 @@
+<div *ngIf="x" class="body" [@recipeState]="">
+    <h1>Recipe Details:</h1>
+    <img *ngIf="rname === 'Dosa'" class="recipe-img" src="https://miro.medium.com/max/1200/1*eozEMMU0c8zss8y9d5iH-Q.jpeg" alt="r-img">
+    <img *ngIf="rname === 'Idly'" class="recipe-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3haT2pJi25uzI8PnPoKCuDJnRjKieH-B-wY6-ZwvwWmL8raT_g"
+        alt="r-img">
+    <h3>{{ rname }}</h3>
+    <p *ngIf="rname === 'Dosa'">A dosa is a cooked flat thin layered rice batter, originating from the Indian subcontinent, made from a fermented batter.
+        It is somewhat similar to a crepe in appearance.</p>
+    <p *ngIf="rname === 'Idly'">Idli or idly are a type of savoury rice cake, originating from the Indian subcontinent, popular as breakfast foods in
+        southern India and among Tamils in Sri Lanka. </p>
+    <button (click)="store()" class="btn btn-primary">Buy</button>
+</div>

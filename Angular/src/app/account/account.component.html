@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">
+            <strong>Account Details</strong>
+        </h1>
+        <ul *ngIf="accounts.length != 0">
+            <div *ngFor="let account of accounts">
+                <h3>Profile: {{ account.id }}</h3>
+                <li>
+                    <strong>Email:</strong> {{ account.name }}
+                </li>
+                <li>
+                    <strong>Password:</strong> {{ account.password }}
+                </li>
+                <li>
+                    <strong>City:</strong> {{ account.city }}
+                </li>
+            </div>
+        </ul>
+    </div>
+</div>

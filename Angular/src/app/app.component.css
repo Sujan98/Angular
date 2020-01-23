@@ -1,0 +1,12 @@
+.head {
+    font-size: 25px!important;
+}
+.recipe-head {
+    color: rgba(0, 0, 0, 0.788);
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+.ul-head {
+    margin: 20px 0px;
+}

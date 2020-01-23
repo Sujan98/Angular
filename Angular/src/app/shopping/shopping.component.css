@@ -1,0 +1,14 @@
+.shop-head {
+    color: rgba(0, 0, 0, 0.788);
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+.list {
+    list-style-type: none;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.list-group-item h3 {
+    font-size: 22px!important;
+}

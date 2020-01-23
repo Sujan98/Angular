@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div>
+        <a [ngStyle]="{'font-size':'20px', 'cursor': 'pointer'}" (click)="routerCheck()" class="navbar-brand">Recipe Book</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div *ngIf="formValidate === 1" class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+            <li class="t-u nav-item">
+                <a class="t-w nav-link px-3" href="#" title="About" routerLink="/recipe">Recipes</a>
+            </li>
+            <li class="t-u nav-item">
+                <a class="t-w nav-link px-3" href="#" title="Register" routerLink="/shopping">Shopping</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a style="cursor: pointer;" class="nav-link dropdown-toggle" (click)="drop()" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                </a>
+                <div *ngIf="dropV" class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" (click)="detail()">Account</a>
+                    <a class="dropdown-item" (click)="signout()">Sign Out</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</nav>

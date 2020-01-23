@@ -1,0 +1,28 @@
+<app-header (page)="load($event)"></app-header>
+<div style="padding: 50px 50px 0px 50px" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+            <!-- <app-recipes *ngIf="pageName === 'recipe'"></app-recipes>
+            <app-shopping *ngIf="pageName === 'shop'"></app-shopping> -->
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3 class="ss">{{ title }}</h3>            
+            <input type="text" (input) = "checkS($event)" class="form-control" [(ngModel)] = "data">
+            <p *ngIf = "created; else notcreated">Server created!</p>
+            <ng-template #notcreated>
+                <p>Server Not Created</p>
+            </ng-template>
+            <p [ngClass] = "{online: status === 'online'}" [ngStyle] = "{backgroundColor: getColor()}">Hello! Status is {{ status }}</p>
+            <p [ngStyle] = "{backgroundColor: getColor()}">Hello! Status is {{ returnStatus() }}</p>
+            <hr>
+            <button [disabled] = "!disable" (click) = "clear()" class="btn btn-danger">Add</button>
+            <app-server *ngFor="let server of servers"></app-server>            
+        </div>
+    </div>
+</div> -->

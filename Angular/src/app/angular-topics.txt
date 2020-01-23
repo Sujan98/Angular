@@ -1,0 +1,13 @@
+1.Components
+2.data binding,string interpolation
+3.event binding,two way data binding
+4.ng built-in directives
+5.custom events,custom property and event binding
+6.Encapsulation,lifecycle
+7.renderer,custom directives
+8.services and dependency injection
+9.routing
+10.handling forms, pipes
+11.making http requests and authentication
+12.Dynamic Components
+13.Optimizing angular apps

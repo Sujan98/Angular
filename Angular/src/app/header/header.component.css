@@ -1,0 +1,24 @@
+.navbar {
+    justify-content: space-between!important;
+    background-color: #343A40;
+    padding: 10px 20px;
+    color: whitesmoke!important;
+}
+.navbar-brand {
+    color: whitesmoke!important;
+    font-weight: 550;
+    font-size: 24px;
+}
+.navbar a {
+    color: whitesmoke!important;
+}
+.dropdown-menu a {
+    color: black!important;
+    cursor: pointer;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+.dropdown-menu {
+    display: block!important;
+}
